@@ -1,6 +1,5 @@
-/*
+package cryptool;
 
- */
 public class CryptoolLauncher {
 
     /*
