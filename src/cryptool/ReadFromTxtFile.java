@@ -1,14 +1,17 @@
 package cryptool;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.nio.file.*;
 
 public class ReadFromTxtFile {
-    public static void readFile() throws FileNotFoundException {
-        File file = new File("C:\\Users\\ks145244\\Desktop\\TestFiles\\TestDoc.txt");
-        Scanner SFile = new Scanner(file);
+    public static String setFile(String fileName)throws Exception
+    {
+        String data;
+        data = new String(Files.readAllBytes(Paths.get(fileName)));
+        return data;
+    }
 
-        while (SFile.hasNextLine())
-            System.out.println(SFile.nextLine());
+    public static String getFile() throws Exception
+    {
+        String data = setFile("C:\\Users\\ks145244\\Desktop\\TestFiles\\TestDoc.txt");
+        return data;
     }
 }
