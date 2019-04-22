@@ -9,9 +9,9 @@ public class ReadFromTxtFile {
         return data;
     }
 
-    public static String getFile() throws Exception
+    public static String getFile(String filePath) throws Exception
     {
-        String data = setFile("C:\\Users\\ks145244\\Desktop\\TestFiles\\TestDoc.txt");
+        String data = setFile(filePath);
         return data;
     }
 }
