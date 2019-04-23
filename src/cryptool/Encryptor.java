@@ -14,7 +14,21 @@ public class Encryptor {
      * @param raw The text to be encypted
      *
      */
-    public String encryptText(String raw, String key) {
-        return null;
+    public static String encryptText(String raw, int key) {
+        String encryptMessage = "";
+        int len = raw.length();
+        for (int x = 0; x < len; x++) {
+                encryptMessage += (char) (raw.charAt(x) + key);
+        }
+        return encryptMessage;
+    }
+
+    public static String decryptText(String raw, int key) {
+        String decryptMessage = "";
+        int len = raw.length();
+        for (int x = 0; x < len; x++) {
+                decryptMessage += (char) (raw.charAt(x) - key);
+        }
+        return decryptMessage;
     }
 }

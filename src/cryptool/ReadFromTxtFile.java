@@ -11,7 +11,6 @@ public class ReadFromTxtFile {
 
     public static String getFile(String filePath) throws Exception
     {
-        String data = setFile(filePath);
-        return data;
+        return setFile(filePath);
     }
 }
