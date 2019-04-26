@@ -11,7 +11,7 @@ static Scanner keyboard = new Scanner(System.in);
 
      */
     public static void main(String[] args) throws Exception {
-        String resultText = "";
+        String resultText;
         System.out.println("Welcome to Cryptool, Would you like to ENCRYPT or DECRYPT?");
         String cypherChoice = keyboard.nextLine();
         System.out.println("Enter File Path to begin.");
@@ -33,6 +33,7 @@ static Scanner keyboard = new Scanner(System.in);
                     new FileOutputStream("ResultFile.txt"), "utf-8"))) {
                 writer.write(resultText);
                 System.out.println("File written: ResultFile.txt");
+                DatabaseConn.DatabaseUpdate(filePath, encryptionKey, resultText, cypherChoice);
             }
         }
         else {
