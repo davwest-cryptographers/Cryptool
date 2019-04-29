@@ -34,7 +34,7 @@ public class DatabaseConn {
             statement = connection.createStatement();
 
             // Step 2.C Send values to Database
-            String query = " insert into CryptoolHistory (ImportFile, Shift Key, ResultText, CypherChoice)"
+            String query = "insert into CryptoolHistory (ImportFile, Shift Key, ResultText, CypherChoice)"
                     + " values (?, ?, ?, ?)";
 
             // create the mysql insert preparedstatement
