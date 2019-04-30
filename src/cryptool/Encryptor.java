@@ -10,7 +10,7 @@ public class Encryptor {
 
     /**
      *
-     * @param key Passkey
+     * @param key Shift key
      * @param raw The text to be encypted
      *
      */
