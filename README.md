@@ -1,3 +1,3 @@
 # Cryptool
-Some students creating a database-driven cryptography tool for school. May contain nuts.
+Some students creating a cryptography tool for school, with Database History. May contain nuts.
 
