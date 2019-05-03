@@ -4,6 +4,7 @@ import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.util.Scanner;
+import static cryptool.Logo.genLogo;
 
 public class CryptoolLauncher {
 static Scanner keyboard = new Scanner(System.in);
@@ -11,19 +12,8 @@ static Scanner keyboard = new Scanner(System.in);
 
      */
     public static void main(String[] args) throws Exception {
-        System.out.println("Welcome to Cryptool.");
-        System.out.println("\n" +
-                " $$$$$$\\                                 $$\\                         $$\\ \n" +
-                "$$  __$$\\                                $$ |                        $$ |\n" +
-                "$$ /  \\__| $$$$$$\\  $$\\   $$\\  $$$$$$\\ $$$$$$\\    $$$$$$\\   $$$$$$\\  $$ |\n" +
-                "$$ |      $$  __$$\\ $$ |  $$ |$$  __$$\\\\_$$  _|  $$  __$$\\ $$  __$$\\ $$ |\n" +
-                "$$ |      $$ |  \\__|$$ |  $$ |$$ /  $$ | $$ |    $$ /  $$ |$$ /  $$ |$$ |\n" +
-                "$$ |  $$\\ $$ |      $$ |  $$ |$$ |  $$ | $$ |$$\\ $$ |  $$ |$$ |  $$ |$$ |\n" +
-                "\\$$$$$$  |$$ |      \\$$$$$$$ |$$$$$$$  | \\$$$$  |\\$$$$$$  |\\$$$$$$  |$$ |\n" +
-                " \\______/ \\__|       \\____$$ |$$  ____/   \\____/  \\______/  \\______/ \\__|\n" +
-                "                    $$\\   $$ |$$ |                                       \n" +
-                "                    \\$$$$$$  |$$ |                                       \n" +
-                "                     \\______/ \\__|                                       \n" +
+        System.out.println("Welcome to...");
+        System.out.println(genLogo() +
                 " ~ Created by Kris S. and Amia C. \n");
         boolean runtime = true;
         String cypherChoice;
@@ -44,7 +34,8 @@ static Scanner keyboard = new Scanner(System.in);
                             new FileOutputStream("ResultFile.txt"), "utf-8"))) {
                         writer.write(resultText);
                         System.out.println("File written: ResultFile.txt");
-                        System.out.println(resultText);
+                        System.out.println("C:\\Users\\(Your User)\\IdeaProjects\\Cryptool\\ResultFile.txt");
+                        System.out.println("\n" + resultText + "\n");
                     }
                     break;
                 case "decrypt":
@@ -54,7 +45,8 @@ static Scanner keyboard = new Scanner(System.in);
                             new FileOutputStream("ResultFile.txt"), "utf-8"))) {
                         writer.write(resultText);
                         System.out.println("File written: ResultFile.txt");
-                        System.out.println(resultText);
+                        System.out.println("C:\\Users\\(Your User)\\IdeaProjects\\Cryptool\\ResultFile.txt");
+                        System.out.println("\n" + resultText + "\n");
                     }
                     break;
                 default:

@@ -2,7 +2,7 @@ package cryptool;
 
 public class Logo {
 
-    public String genLogo(){
+    public static String genLogo(){
         int ranNum = (int) (Math.random() * ((9 - 0) + 1)) + 0;
         String[] logo = {"\n" +
                 " $$$$$$\\                                 $$\\                         $$\\ \n" +
