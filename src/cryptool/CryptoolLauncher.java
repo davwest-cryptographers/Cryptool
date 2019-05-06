@@ -23,7 +23,7 @@ static Scanner keyboard = new Scanner(System.in);
             cypherChoice = keyboard.next();
             System.out.println("Enter File Path to begin.");
             String filePath = keyboard.next();
-            System.out.println("Now input your shift key. Integer (0-999999999) only.");
+            System.out.println("Now input your shift key. Integer (0-999999) only.");
             int encryptionKey = keyboard.nextInt();
 
             switch (cypherChoice.toLowerCase()) {
