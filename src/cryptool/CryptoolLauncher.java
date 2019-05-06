@@ -34,7 +34,7 @@ static Scanner keyboard = new Scanner(System.in);
                             new FileOutputStream("ResultFile.txt"), "utf-8"))) {
                         writer.write(resultText);
                         System.out.println("File written: ResultFile.txt");
-                        System.out.println("C:\\Users\\(Your User)\\IdeaProjects\\Cryptool\\ResultFile.txt");
+                        System.out.println("C:\\Users\\(Your User)\\Downloads\\Cryptool-master\\Cryptool-master\\ResultFile.txt");
                         System.out.println("\n" + resultText + "\n");
                     }
                     break;
@@ -45,7 +45,7 @@ static Scanner keyboard = new Scanner(System.in);
                             new FileOutputStream("ResultFile.txt"), "utf-8"))) {
                         writer.write(resultText);
                         System.out.println("File written: ResultFile.txt");
-                        System.out.println("C:\\Users\\(Your User)\\IdeaProjects\\Cryptool\\ResultFile.txt");
+                        System.out.println("C:\\Users\\(Your User)\\Downloads\\Cryptool-master\\Cryptool-master\\ResultFile.txt");
                         System.out.println("\n" + resultText + "\n");
                     }
                     break;
