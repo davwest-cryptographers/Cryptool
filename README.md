@@ -6,6 +6,8 @@
 Open Cryptool-master, then src, cryptool, CrytoolLauncher, and then you run it.
 
 ## UML
+![flowchart](https://github.com/davwest-cryptographers/Cryptool/blob/master/Cryptool%20UML.png)
 
 ## Contact Us
 * Kris Simmonds: kristofer.simmonds@gmail.com
+* Amia Combs: ac116232@students.davenport.k12.ia.us
